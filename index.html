@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaLands SMP</title>
+  <meta name="description" content="NovaLands SMP — Java 1.8.8 cracked-only survival server. Explore, build, and survive together!" />
+  <style>
+    :root{
+      --bg: #0b1220;
+      --accent:#7dd3fc;
+      --accent-2:#a78bfa;
+      --text:#e6eefc;
+      --muted:#98a2b3;
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(125,211,252,0.15), transparent), radial-gradient(1000px 500px at 10% 0%, rgba(167,139,250,0.15), transparent), var(--bg); color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial;}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:20px}
+    .nav{position:sticky; top:0; z-index:20; backdrop-filter:saturate(150%) blur(8px); background:rgba(11,18,32,.6); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800}
+    .logo{width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:grid; place-items:center; font-weight:900; color:#0b1220}
+    .nav-links{display:flex; gap:14px; align-items:center}
+    .nav-links a{padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.08)}
+    .nav-links a:hover{background:rgba(255,255,255,.06)}
+    .hamburger{display:none; border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:8px 10px; background:transparent; color:var(--text)}
+    .hero{padding:60px 0 40px}
+    .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; border:1px dashed rgba(255,255,255,.18); color:var(--muted)}
+    h1{font-size:42px; line-height:1.05; margin:14px 0 10px}
+    .lead{color:#c9d6ee; font-size:18px; margin:0 0 18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:18px}
+    .actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; font-weight:700; border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.06);}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 8px 20px rgba(0,0,0,.25)}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#0b1220; border:none}
+    .small{font-size:12px; color:var(--muted)}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 10px; background:#0f172a; border-radius:999px; border:1px solid rgba(255,255,255,.06)}
+    section{padding:28px 0}
+    h2{font-size:26px; margin:0 0 12px}
+    .grid{display:grid; gap:16px; grid-template-columns:repeat(2, 1fr)}
+    .list{display:grid; gap:10px}
+    .rule{padding:12px; border-radius:14px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.04)}
+    footer{padding:30px 0 60px; color:var(--muted)}
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .hamburger{display:inline-block}
+      .nav.open .nav-links{display:flex; position:absolute; left:0; right:0; top:60px; background:rgba(11,18,32,.98); border-bottom:1px solid rgba(255,255,255,.08); padding:12px 16px; flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="top">
+    <div class="container nav-inner">
+      <div class="brand"><div class="logo">N</div> NovaLands SMP</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#join">How to Join</a>
+        <a href="#rules">Rules</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <header class="container hero">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">🌌 Now Open • Java 1.8.8 • Cracked Only</span>
+        <h1>Welcome to <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent">NovaLands SMP</span></h1>
+        <p class="lead">A friendly survival world where you can build, explore, and make new friends. Fair rules. Zero griefing. Big adventures.</p>
+        <div class="card">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap">
+            <div>
+              <div class="small">Server IP (Java 1.8.8 • Cracked Only)</div>
+              <div class="pill"><code id="ip">NovaLandsSMP.aternos.me</code></div>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center">
+              <button class="btn primary" id="copyBtn">Copy IP</button>
+              <a class="btn" href="#join">How to Join</a>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <span class="small">Java Edition 1.8.8 • Cracked-only access • Kid‑friendly community</span>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="aspect-ratio:16/9; display:grid; place-items:center; text-align:center">
+          <div>
+            <div style="font-size:48px">🛡️⛏️</div>
+            <div class="small">Replace with a screenshot of your spawn!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="join">
+      <h2>How to Join (Java 1.8.8 • Cracked Only)</h2>
+      <div class="card">
+        <ol>
+          <li>Open your <b>cracked Minecraft Java 1.8.8</b> launcher</li>
+          <li>Click <b>Multiplayer</b> → <b>Add Server</b></li>
+          <li>Server Name: <code>NovaLands SMP</code></li>
+          <li>Server Address: <code>NovaLandsSMP.aternos.me</code></li>
+          <li>Click <b>Done</b> → Join!</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why You’ll Love It</h2>
+      <div class="grid">
+        <div class="card"><b>Pure Survival</b><br/><span class="small">No pay‑to‑win. Just fair fun.</span></div>
+        <div class="card"><b>Events & Quests</b><br/><span class="small">Community challenges and adventures.</span></div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Server Rules</h2>
+      <div class="list">
+        <div class="rule">1) Be respectful — no bullying.</div>
+        <div class="rule">2) No hacking, x‑ray, or dupes.</div>
+        <div class="rule">3) No griefing or stealing.</div>
+        <div class="rule">4) Keep chat friendly and clean.</div>
+        <div class="rule">5) Listen to staff. Have fun!</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="small">Discord coming soon. For now, contact the server owner in‑game.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+      <span class="small">© <span id="year"></span> NovaLands SMP</span>
+      <a class="small" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    const burger = document.getElementById('hamburger');
+    burger?.addEventListener('click', ()=> nav.classList.toggle('open'));
+
+    const ipEl = document.getElementById('ip');
+    const copyBtn = document.getElementById('copyBtn');
+    copyBtn?.addEventListener('click', async ()=>{
+      const ip = ipEl?.textContent?.trim();
+      try{
+        await navigator.clipboard.writeText(ip);
+        copyBtn.textContent = 'Copied! ✅';
+        setTimeout(()=> copyBtn.textContent = 'Copy IP', 1500);
+      }catch(e){
+        alert('Copy failed — copy manually.');
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
